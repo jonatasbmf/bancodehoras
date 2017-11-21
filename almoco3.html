@@ -1,0 +1,111 @@
+<Html>
+<head>
+<meta charset='utf-8'>
+<link
+	href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all"
+	rel="stylesheet" type="text/css">
+<link href="./estilo/estilo.css" rel="stylesheet">
+<link href="./estilo/bootstrap.min.css" rel="stylesheet">
+<link href="./estilo/components-md.min.css" rel="stylesheet">
+<link href="./estilo/components-rounded.min.css" rel="stylesheet">
+<link href="./estilo/components.min.css" rel="stylesheet">
+<link href="./estilo/default.min.css" rel="stylesheet">
+<link href="./estilo/layout.min.css" rel="stylesheet">
+<link href="./estilo/light.min.css" rel="stylesheet">
+<link href="./estilo/plugins-md.min.css" rel="stylesheet">
+<link href="./estilo/plugins.min.css" rel="stylesheet">
+<link href="./estilo/simple-line-icons.min.css" rel="stylesheet">
+<link rel="shortcut icon" href="logo.ico">
+<title>Banco de horas</title>
+</head>
+<body>
+	<div class="nnavbar-top">
+		<a href="http://intranet/"> <img src="Imagens/logo.png"
+			alt="Logo-marca" class="img-logo-navbar"></a>
+	</div>
+	<div class="page-content-wrapper" style="padding-top: 100px;">
+		<div class="">
+			<div class="col-md-3"></div>
+			<div class="col-md-7">
+				<div class="portlet light bordered">
+					<form method="POST" action="almoco.php">
+						<h1>Formulário de autorização de mudança no horário de almoço</h1>
+						<br>
+						<div class="form-group">
+							<label>Nome do colaborador</label>
+							<div class="input-group">
+								<input type="text" requerid class="form-control"
+									placeholder="..." size="50" name="funcionario">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<table>
+								<tr>
+									<td style="padding: 5px;"><label>Do horário</label>
+										<table>
+											<tr>
+												<td style="padding: 5px;"><label>Hora</label>
+													<div class="input-group">
+														<input type="text" requerid class="form-control"
+															placeholder="00" size="3" name="qtd1">
+													</div></td>
+												<td style="padding: 5px;"><label>Minuto</label>
+													<div class="input-group">
+														<input type="text" requerid class="form-control"
+															placeholder="00" size="3" name="qtd2">
+													</div></td>
+											</tr>
+
+										</table></td>
+									<td style="padding: 5px;"><label>Para o horário</label>
+										<table>
+											<tr>
+												<td style="padding: 5px;"><label>Hora</label>
+													<div class="input-group">
+														<input type="text" requerid class="form-control"
+															placeholder="00" size="3" name="qtd3">
+													</div></td>
+												<td style="padding: 5px;"><label>Minuto</label>
+													<div class="input-group">
+														<input type="text" requerid class="form-control"
+															placeholder="00" size="3" name="qtd4">
+													</div></td>
+											</tr>
+
+										</table></td>
+								</tr>
+							</table>
+						</div>
+						<div class="form-group">
+							<label>No dia:</label>
+							<div class="input-group">
+								<input type="date" requerid class="form-control"
+									placeholder="01/01/2017" name="data">
+							</div>
+						</div>
+						<br>
+						<div class="form-group">
+							<label>Motivo</label>
+							<div class="input-group">
+								<textarea rows='3' cols='80' requerid class="form-control"
+									placeholder="Nome do colaborador" name="motivo"> </textarea>
+							</div>
+						</div>
+				</div>
+
+				<input class="btn btn-success" type="submit" name="Gerar"
+					Value="Imprimir"></input>
+				</td>
+				<td><input class="btn btn-success" type="reset" name="Limpar"
+					Value="Limpar"></input></td>
+				<td><a href="./index.html"> <input class="btn btn-success"
+						value="Cancelar"></input>
+				</a>
+					</form>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

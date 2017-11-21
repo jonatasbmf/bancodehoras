@@ -1,0 +1,52 @@
+<Html>
+<head>
+<meta charset='utf-8'>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=all" rel="stylesheet" type="text/css">
+<link href="./estilo/estilo.css" rel="stylesheet">
+<link rel="shortcut icon" href="logo.ico">
+<title>Almoço</title>
+</head>
+<body>
+	<div class="navbar-top">
+		<a href="http://intranet/"> <img src="Imagens/logo.png"
+			alt="Logo-marca" class="img-logo-navbar"></a>
+	</div>
+	<div class="coluna">
+		<form method="POST" action="almoco.php">
+			<table class="tabela">
+				<thead>
+					<td colspan="2"><br>
+					<h1>Formulário de autorização de mudança no horário de almoço</h1>
+						<br> <br></td>
+				</thead>
+				<tr>
+					<td class="coluna1">Funcionário:</td>
+					<td class="coluna2"><input type="text" size="50"
+						name="funcionario" required></td>
+				</tr>
+
+				<tr>
+					<td class="coluna1">Horário realizado:</td>
+					<td class="coluna2"><input type='text' size=2 name="qtd1" required>H
+						: <input type='text' size=2 name="qtd2" required>Min até <input
+						type='text' size=2 name="qtd3" required>H : <input type='text'
+						size=2 name="qtd4" required>Min</td>
+				</tr>
+				<tr>
+					<td class="coluna1">Data:</td>
+					<td class="coluna2"><input type="date" name="data" required></input></td>
+				</tr>
+				<tr>
+					<td class="coluna1">Motivo:</td>
+					<td class="coluna2"><textarea rows='5' cols='75' name="motivo" required></textarea></td>
+				</tr>
+			</table>
+			<input class="btn btn-success" type="submit" name="Gerar" Value="Imprimir"></input> &nbsp;
+			&nbsp; || &nbsp; &nbsp; <input class="btn btn-success fa fa-arrow-left fa-fw" type="reset" name="Limpar"
+				Value="Limpar"></input>
+		</form>
+	</div>
+	<br>
+	<a href='.\index.html'><< voltar </a>
+</body>
+</html>
